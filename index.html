@@ -362,108 +362,115 @@ rounded-md text-sm font-medium transition-colors" data-page-id="home">หน้�
 
 
         <div id="aboutPage" class="page-content hidden">
-            <section class="py-16 bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 min-h-screen">
-                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div class="text-center mb-16">
-                        <div class="inline-block bg-gradient-purple p-4 rounded-full shadow-lg mb-6">
-                            <i class="fas fa-school text-3xl text-white"></i>
+    <section class="relative min-h-screen py-16 bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 overflow-hidden">
+        
+        <div class="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
+            <div class="absolute top-10 left-10 w-72 h-72 bg-blue-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
+            <div class="absolute bottom-10 right-10 w-80 h-80 bg-purple-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse" style="animation-delay: 1s;"></div>
+            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-pink-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse" style="animation-delay: 2s;"></div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <div class="inline-block bg-white/60 backdrop-blur-md p-4 rounded-full shadow-lg mb-6 border border-white/50">
+                    <i class="fas fa-school text-3xl text-purple-600"></i>
+                </div>
+                <h1 class="text-5xl font-bold text-gray-800 mb-4 font-prompt">🏫 เกี่ยวกับเรา</h1>
+                <p class="text-xl text-gray-600 mb-6 font-kanit">ประวัติและข้อมูลของโรงเรียนสตรีพัทลุง</p>
+                <div class="w-32 h-1 bg-gradient-to-r from-purple-400 to-pink-400 mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 mb-16">
+                <div class="bg-white/60 backdrop-blur-md rounded-3xl shadow-xl p-8 border border-white/50 hover:shadow-2xl transition-all duration-300">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center mr-4 shadow-sm">
+                            <i class="fas fa-history text-lg"></i>
                         </div>
-                        <h1 class="text-5xl font-bold text-gray-800 mb-4">🏫 เกี่ยวกับเรา</h1>
-                        <p class="text-xl text-gray-600 mb-6">ประวัติและข้อมูลของโรงเรียนสตรีพัทลุง</p>
-                        <div class="w-32 h-1 bg-gradient-purple mx-auto rounded-full"></div>
+                        <h2 class="text-2xl font-bold text-blue-800 font-prompt">📚 ประวัติโรงเรียน</h2>
                     </div>
-
-                    <div class="grid md:grid-cols-2 gap-12 mb-16">
-                        <div class="bg-white rounded-2xl shadow-custom p-8 card-hover border-l-4 border-blue-500">
-                            <div class="flex items-center mb-6">
-                                <div class="w-12 h-12 bg-gradient-blue rounded-full flex items-center justify-center mr-4">
-                                    <i class="fas fa-history text-white text-lg"></i>
-                                </div>
-                                <h2 class="text-2xl font-bold text-blue-800">📚 ประวัติโรงเรียนสตรีพัทลุง</h2>
-                            </div>
-                            <div class="prose text-gray-600 leading-relaxed space-y-4">
-                                <div class="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-300">
-                                    <p>โรงเรียนสตรีพัทลุง มีรากฐานมาจากโรงเรียนประชาบาล คือ โรงเรียนโสภณพัทลุงกุลจัดตั้งชั้นมัธยมปีละชั้น จนถึงชั้นมัธยมศึกษาปีที่ 4 โดยมี นายจรัล ดิสรา ครูใหญ่ฝ่ายประชาบาลเป็นผู้ดูแล</p>
-                                </div>
-                                
-                                <div class="bg-purple-50 rounded-lg p-4 border-l-4 border-purple-300">
-                                    <p><strong>ปี พ.ศ. 2471</strong> กระทรวงศึกษาธิการได้แต่งตั้งนางสาวปริก เด่นดาวเสือ รักษาการในตำแหน่งครูใหญ่คนแรก</p>
-                                </div>
-                                
-                                <div class="bg-green-50 rounded-lg p-4 border-l-4 border-green-300">
-                                    <p><strong>เมื่อ พ.ศ. 2482</strong> กระทรวงศึกษาธิการได้ให้งบประมาณก่อสร้างอาคารโรงเรียนสตรีพัทลุงหลังแรก สมัยขุนวิจารณ์จรรยา เป็นศึกษาธิการจังหวัดพัทลุง งบประมาณก่อสร้าง 6,000 บาท</p>
-                                </div>
-                                
-                                <div class="bg-orange-50 rounded-lg p-4 border-l-4 border-orange-300">
-                                    <p><strong>วันที่ 17 พฤษภาคม 2482</strong> นักเรียนได้ย้ายมาอยู่ ณ สถานที่แห่งใหม่ มีนักเรียนหญิงทั้งหมด 70 คน เปิดสอนตั้งแต่ชั้นมัธยมศึกษาปีที่ 1 ถึงชั้นมัธยมศึกษาปีที่ 6 จำนวน 6 ห้องเรียน</p>
-                                </div>
-                            </div>
+                    <div class="prose text-gray-600 leading-relaxed space-y-4 font-kanit">
+                        <div class="bg-blue-50/50 rounded-lg p-4 border-l-4 border-blue-400">
+                            <p>โรงเรียนสตรีพัทลุง มีรากฐานมาจากโรงเรียนประชาบาล คือ โรงเรียนโสภณพัทลุงกุล</p>
                         </div>
-
-                        <div class="bg-white rounded-2xl shadow-custom p-8 card-hover border-l-4 border-purple-500">
-                            <div class="flex items-center mb-6">
-                                <div class="w-12 h-12 bg-gradient-purple rounded-full flex items-center justify-center mr-4">
-                                    <i class="fas fa-laptop text-white text-lg"></i>
-                                </div>
-                                <h2 class="text-2xl font-bold text-purple-800">✨ เกี่ยวกับ Satri Plus</h2>
-                            </div>
-                            <div class="prose text-gray-600 leading-relaxed space-y-4">
-                                <div class="bg-gradient-to-r from-purple-50 to-pink-50 rounded-lg p-4 border border-purple-200">
-                                    <p>"Satri-Plus" เป็น platform ที่โรงเรียนสตรีพัทลุงจัดทำขึ้นให้ผู้เรียนและผู้ที่สนใจเพื่อเป็นแหล่งรวบรวมองค์ความรู้ทุกศาสตร์ตาม 8 กลุ่มสาระการเรียนรู้ และ 1 กลุ่มงาน</p>
-                                </div>
-                                
-                                <div class="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg p-4 border border-blue-200">
-                                    <p>เป็นช่องทางให้ผู้เรียนเข้ามาทบทวนความรู้เพื่อเพิ่มประสิทธิภาพในการเรียนรู้ ตามแนวคิด <strong class="text-blue-600">Anywhere Anytime เรียนได้ทุกที่ ทุกเวลา</strong></p>
-                                </div>
-                                
-                                <div class="bg-gradient-to-r from-green-50 to-emerald-50 rounded-lg p-4 border border-green-200">
-                                    <p>ตามนโยบายของสำนักงานคณะกรรมการการศึกษาขั้นพื้นฐานกระทรวงศึกษาธิการ และเพื่อเป็นแหล่งรวบรวมความรู้ตามความถนัดและสนใจตามหลักสูตร <strong class="text-green-600">Building A Future อนาคตสร้างได้</strong> ที่โรงเรียนสตรีพัทลุง</p>
-                                </div>
-                            </div>
+                        <div class="bg-purple-50/50 rounded-lg p-4 border-l-4 border-purple-400">
+                            <p><strong>พ.ศ. 2471</strong> แต่งตั้งนางสาวปริก เด่นดาวเสือ รักษาการในตำแหน่งครูใหญ่คนแรก</p>
                         </div>
-                    </div>
-
-                    <div class="grid md:grid-cols-3 gap-8">
-                        <div class="bg-white rounded-2xl shadow-custom p-6 text-center card-hover">
-                            <div class="w-16 h-16 bg-gradient-blue rounded-full mx-auto mb-4 flex items-center justify-center">
-                                <i class="fas fa-eye text-white text-2xl"></i>
-                            </div>
-                            <h3 class="text-xl font-bold text-gray-800 mb-3">🎯 วิสัยทัศน์</h3>
-                            <p class="text-gray-600">มุ่งสู่ความเป็นเลิศทางวิชาการ พัฒนาผู้เรียนให้มีคุณภาพ</p>
-                        </div>
-                        <div class="bg-white rounded-2xl shadow-custom p-6 text-center card-hover">
-                            <div class="w-16 h-16 bg-gradient-green rounded-full mx-auto mb-4 flex items-center justify-center">
-                                <i class="fas fa-bullseye text-white text-2xl"></i>
-                            </div>
-                            <h3 class="text-xl font-bold text-gray-800 mb-3">🚀 พันธกิจ</h3>
-                            <p class="text-gray-600">จัดการศึกษาที่มีคุณภาพ เน้นการเรียนรู้ตลอดชีวิต</p>
-                        </div>
-                        <div class="bg-white rounded-2xl shadow-custom p-6 text-center card-hover">
-                            <div class="w-16 h-16 bg-gradient-purple rounded-full mx-auto mb-4 flex items-center justify-center">
-                                <i class="fas fa-heart text-white text-2xl"></i>
-                            </div>
-                            <h3 class="text-xl font-bold text-gray-800 mb-3">💎 ค่านิยม</h3>
-                            <p class="text-gray-600">ส่งเสริมคุณธรรม จริยธรรม และความเป็นไทย</p>
+                        <div class="bg-green-50/50 rounded-lg p-4 border-l-4 border-green-400">
+                            <p><strong>17 พฤษภาคม 2482</strong> ย้ายมาอยู่ ณ สถานที่แห่งใหม่ (ปัจจุบัน)</p>
                         </div>
                     </div>
                 </div>
-            </section>
+
+                <div class="bg-white/60 backdrop-blur-md rounded-3xl shadow-xl p-8 border border-white/50 hover:shadow-2xl transition-all duration-300">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-purple-100 text-purple-600 rounded-xl flex items-center justify-center mr-4 shadow-sm">
+                            <i class="fas fa-laptop text-lg"></i>
+                        </div>
+                        <h2 class="text-2xl font-bold text-purple-800 font-prompt">✨ เกี่ยวกับ Satri Plus</h2>
+                    </div>
+                    <div class="prose text-gray-600 leading-relaxed space-y-4 font-kanit">
+                        <p class="bg-white/50 p-4 rounded-xl shadow-sm border border-gray-100">
+                            "Satri-Plus" เป็น platform แหล่งรวบรวมองค์ความรู้ทุกศาสตร์ตาม 8 กลุ่มสาระการเรียนรู้
+                        </p>
+                        <p class="bg-white/50 p-4 rounded-xl shadow-sm border border-gray-100">
+                            แนวคิด <strong class="text-blue-600">Anywhere Anytime</strong> เรียนได้ทุกที่ ทุกเวลา
+                        </p>
+                        <p class="bg-white/50 p-4 rounded-xl shadow-sm border border-gray-100">
+                            ตามหลักสูตร <strong class="text-green-600">Building A Future</strong> อนาคตสร้างได้
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white/60 backdrop-blur-md rounded-2xl p-6 text-center shadow-lg border border-white/50 hover:-translate-y-2 transition-transform duration-300">
+                    <div class="w-16 h-16 bg-blue-100 text-blue-600 rounded-full mx-auto mb-4 flex items-center justify-center text-2xl shadow-inner">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2 font-prompt">วิสัยทัศน์</h3>
+                    <p class="text-gray-600 font-kanit">มุ่งสู่ความเป็นเลิศทางวิชาการ</p>
+                </div>
+                <div class="bg-white/60 backdrop-blur-md rounded-2xl p-6 text-center shadow-lg border border-white/50 hover:-translate-y-2 transition-transform duration-300">
+                    <div class="w-16 h-16 bg-green-100 text-green-600 rounded-full mx-auto mb-4 flex items-center justify-center text-2xl shadow-inner">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2 font-prompt">พันธกิจ</h3>
+                    <p class="text-gray-600 font-kanit">จัดการศึกษาที่มีคุณภาพ</p>
+                </div>
+                <div class="bg-white/60 backdrop-blur-md rounded-2xl p-6 text-center shadow-lg border border-white/50 hover:-translate-y-2 transition-transform duration-300">
+                    <div class="w-16 h-16 bg-purple-100 text-purple-600 rounded-full mx-auto mb-4 flex items-center justify-center text-2xl shadow-inner">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2 font-prompt">ค่านิยม</h3>
+                    <p class="text-gray-600 font-kanit">ส่งเสริมคุณธรรม จริยธรรม</p>
+                </div>
+            </div>
         </div>
+    </section>
+</div>
+
 
         <div id="subjectsPage" class="page-content hidden">
-            <section class="py-16 bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 min-h-screen">
-                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div class="text-center mb-12">
-                        <h1 class="text-5xl font-bold text-gray-800 mb-4">🎓 กลุ่มสาระการเรียนรู้</h1>
-                        <p class="text-xl text-gray-600 mb-6">เลือกกลุ่มสาระที่ต้องการเรียน</p>
-                        <div class="w-32 h-1 bg-gradient-purple mx-auto rounded-full"></div>
-                    </div>
-
-                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="subjectGroups">
-                        </div>
-                </div>
-            </section>
+    <section class="relative min-h-screen py-16 bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
+            <div class="absolute top-0 left-1/4 w-96 h-96 bg-blue-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
+            <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-pink-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse" style="animation-delay: 1s;"></div>
         </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="bg-white/50 px-4 py-2 rounded-full text-purple-600 text-sm font-bold shadow-sm mb-4 inline-block">Learning Resources</span>
+                <h1 class="text-5xl font-bold text-gray-800 mb-4 font-prompt">🎓 กลุ่มสาระการเรียนรู้</h1>
+                <p class="text-xl text-gray-600 mb-6 font-kanit">เลือกกลุ่มสาระที่ต้องการเรียน</p>
+                <div class="w-32 h-1 bg-gradient-to-r from-blue-400 to-purple-400 mx-auto rounded-full"></div>
+            </div>
+            
+            <div id="subjectGroups" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                </div>
+        </div>
+    </section>
+</div>
+
 
         <div id="detailPage" class="page-content hidden">
              <section class="py-16 bg-gradient-to-br from-indigo-50 via-blue-50 to-cyan-50 min-h-screen">
@@ -508,142 +515,89 @@ rounded-md text-sm font-medium transition-colors" data-page-id="home">หน้�
         </div>
 
         <div id="contactPage" class="page-content hidden">
-            <section class="py-16 bg-gradient-to-br from-green-50 via-blue-50 to-purple-50 min-h-screen">
-                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div class="text-center mb-16">
-                        <div class="inline-block bg-gradient-green p-4 rounded-full shadow-lg mb-6">
-                            <i class="fas fa-phone text-3xl text-white"></i>
-                        </div>
-                        <h1 class="text-5xl font-bold text-gray-800 mb-4">📞 ติดต่อเรา</h1>
-                        <p class="text-xl text-gray-600 mb-6">ช่องทางการติดต่อและข้อมูลโรงเรียน</p>
-                        <div class="w-32 h-1 bg-gradient-green mx-auto rounded-full"></div>
-                    </div>
+    <section class="relative min-h-screen py-16 bg-gradient-to-br from-green-50 via-blue-50 to-purple-50 overflow-hidden">
+        
+        <div class="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
+            <div class="absolute top-20 right-20 w-72 h-72 bg-green-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
+            <div class="absolute bottom-20 left-20 w-80 h-80 bg-blue-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse" style="animation-delay: 1s;"></div>
+        </div>
 
-                    <div class="grid md:grid-cols-2 gap-12 mb-12">
-                        <div class="bg-white rounded-2xl shadow-custom p-8 card-hover border-l-4 border-blue-500">
-                            <div class="flex items-center mb-6">
-                                <div class="w-12 h-12 bg-gradient-blue rounded-full flex items-center justify-center mr-4">
-                                    <i class="fas fa-map-marker-alt text-white text-lg"></i>
-                                </div>
-                                <h2 class="text-2xl font-bold text-blue-800">📍 ข้อมูลติดต่อ</h2>
-                            </div>
-                            <div class="space-y-6">
-                                <div class="bg-blue-50 rounded-lg p-4 border border-blue-200">
-                                    <div class="flex items-start space-x-3">
-                                        <i class="fas fa-map-marker-alt text-blue-600 mt-1 text-lg"></i>
-                                        <div>
-                                            <h3 class="font-bold text-gray-800 mb-2">🏫 ที่อยู่</h3>
-                                            <p class="text-gray-600 leading-relaxed">250 ถนนราเมศวร์ ตำบลคูหาสวรรค์<br>อำเภอเมือง จังหวัดพัทลุง 93000</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="bg-green-50 rounded-lg p-4 border border-green-200">
-                                    <div class="flex items-start space-x-3">
-                                        <i class="fas fa-phone text-green-600 mt-1 text-lg"></i>
-                                        <div>
-                                            <h3 class="font-bold text-gray-800 mb-2">📞 โทรศัพท์</h3>
-                                            <p class="text-gray-600">074-613-023</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="bg-orange-50 rounded-lg p-4 border border-orange-200">
-                                    <div class="flex items-start space-x-3">
-                                        <i class="fas fa-envelope text-orange-600 mt-1 text-lg"></i>
-                                        <div>
-                                            <h3 class="font-bold text-gray-800 mb-2">📧 อีเมล</h3>
-                                            <p class="text-gray-600">satriphatthalung@spt.ac.th</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="bg-purple-50 rounded-lg p-4 border border-purple-200">
-                                    <div class="flex items-start space-x-3">
-                                        <i class="fas fa-globe text-purple-600 mt-1 text-lg"></i>
-                                        <div>
-                                            <h3 class="font-bold text-gray-800 mb-2">🌐 เว็บไซต์</h3>
-                                            <p class="text-gray-600">www.spt.ac.th</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <div class="inline-block bg-white/60 backdrop-blur-md p-4 rounded-full shadow-lg mb-6 border border-white/50">
+                    <i class="fas fa-paper-plane text-3xl text-blue-600"></i>
+                </div>
+                <h1 class="text-5xl font-bold text-gray-800 mb-4 font-prompt">📬 ติดต่อเรา</h1>
+                <p class="text-xl text-gray-600 mb-6 font-kanit">สอบถามข้อมูลเพิ่มเติมหรือแจ้งปัญหาการใช้งาน</p>
+                <div class="w-32 h-1 bg-gradient-to-r from-green-400 to-blue-400 mx-auto rounded-full"></div>
+            </div>
 
-                        <div class="bg-white rounded-2xl shadow-custom p-8 card-hover border-l-4 border-purple-500">
-                            <div class="flex items-center mb-6">
-                                <div class="w-12 h-12 bg-gradient-purple rounded-full flex items-center justify-center mr-4">
-                                    <i class="fas fa-share-alt text-white text-lg"></i>
-                                </div>
-                                <h2 class="text-2xl font-bold text-purple-800">📲 ช่องทางโซเชียล</h2>
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-white/60 backdrop-blur-md rounded-3xl p-8 shadow-xl border border-white/50 hover:shadow-2xl transition-all duration-300">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-6 font-prompt flex items-center">
+                        <i class="fas fa-map-marker-alt text-red-500 mr-3"></i> สถานที่ติดต่อ
+                    </h2>
+                    <div class="space-y-6">
+                        <div class="flex items-start bg-white/40 p-4 rounded-xl">
+                            <div class="flex-shrink-0 w-10 h-10 bg-red-100 rounded-full flex items-center justify-center text-red-500 mt-1">
+                                <i class="fas fa-school"></i>
                             </div>
-                            <div class="grid grid-cols-2 gap-4">
-                                <a href="https://www.facebook.com/spt.ac.th" target="_blank" rel="noopener noreferrer" class="flex items-center space-x-3 bg-blue-600/10 hover:bg-blue-600/20 p-4 rounded-xl transition-all duration-300">
-                                    <div class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0">
-                                        <i class="fab fa-facebook-f text-white text-xl"></i>
-                                    </div>
-                                    <div>
-                                        <h3 class="font-bold text-gray-800">Facebook</h3>
-                                        <p class="text-gray-600 text-sm">เพจหลักโรงเรียน</p>
-                                    </div>
-                                </a>
-                                <a href="https://www.facebook.com/photoavspt" target="_blank" rel="noopener noreferrer" class="flex items-center space-x-3 bg-blue-600/10 hover:bg-red-600/20 p-4 rounded-xl transition-all duration-300">
-                                    <div class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0">
-                                        <i class="fab fa-facebook-f text-white text-xl"></i>
-                                    </div>
-                                    <div>
-                                        <h3 class="font-bold text-gray-800">Facebok</h3>
-                                        <p class="text-gray-600 text-sm">เพจประชาสัมพันธ์</p>
-                                    </div>
-                                </a>
-                                <a href="https://www.instagram.com/sptschool_official?igsh=MWM0NWl2MmF1cXhvdw==" target="_blank" rel="noopener noreferrer" class="flex items-center space-x-3 bg-pink-600/10 hover:bg-pink-600/20 p-4 rounded-xl transition-all duration-300">
-                                    <div class="w-10 h-10 bg-pink-600 rounded-full flex items-center justify-center flex-shrink-0">
-                                        <i class="fab fa-instagram text-white text-xl"></i>
-                                    </div>
-                                    <div>
-                                        <h3 class="font-bold text-gray-800">Instagram</h3>
-                                        <p class="text-gray-600 text-sm">รูปภาพกิจกรรม</p>
-                                    </div>
-                                </a>
-                                <a href="https://www.tiktok.com/@spt_school?_t=ZS-90tOrK4pFtH&_r=1" target="_blank" rel="noopener noreferrer" class="flex items-center space-x-3 bg-gray-900/10 hover:bg-gray-900/20 p-4 rounded-xl transition-all duration-300">
-                                    <div class="w-10 h-10 bg-gray-900 rounded-full flex items-center justify-center flex-shrink-0">
-                                        <i class="fab fa-tiktok text-white text-xl"></i>
-                                    </div>
-                                    <div>
-                                        <h3 class="font-bold text-gray-800">TikTok</h3>
-                                        <p class="text-gray-600 text-sm">วิดีโอสั้นและเนื้อหาสนุกๆ</p>
-                                    </div>
-                                </a>
+                            <div class="ml-4">
+                                <p class="font-bold text-gray-800">โรงเรียนสตรีพัทลุง</p>
+                                <p class="text-gray-600 text-sm mt-1">205 ถ.ราเมศวร์ ต.คูหาสวรรค์ อ.เมือง จ.พัทลุง 93000</p>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="bg-white rounded-2xl shadow-custom p-8 text-center card-hover">
-                        <div class="mb-6">
-                            <div class="w-16 h-16 bg-gradient-orange rounded-full mx-auto mb-4 flex items-center justify-center">
-                                <i class="fas fa-comments text-white text-2xl"></i>
+                        <div class="flex items-start bg-white/40 p-4 rounded-xl">
+                            <div class="flex-shrink-0 w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-500 mt-1">
+                                <i class="fas fa-phone"></i>
                             </div>
-                            <h3 class="text-2xl font-bold text-gray-800 mb-2">💬 ต้องการสอบถามข้อมูล?</h3>
-                            <p class="text-gray-600 mb-6">ติดต่อเราผ่านช่องทางที่สะดวกสำหรับคุณ</p>
+                            <div class="ml-4">
+                                <p class="font-bold text-gray-800">เบอร์โทรศัพท์</p>
+                                <p class="text-gray-600 mt-1">074-613-040</p>
+                            </div>
                         </div>
-                        <div class="grid md:grid-cols-3 gap-4">
-                            <div class="bg-blue-50 rounded-lg p-4 border border-blue-200">
-                                <i class="fas fa-phone text-blue-600 text-2xl mb-2"></i>
-                                <h4 class="font-semibold text-gray-800">โทรศัพท์</h4>
-                                <p class="text-gray-600 text-sm">074-613-023</p>
+                        <div class="flex items-start bg-white/40 p-4 rounded-xl">
+                            <div class="flex-shrink-0 w-10 h-10 bg-green-100 rounded-full flex items-center justify-center text-green-500 mt-1">
+                                <i class="fas fa-envelope"></i>
                             </div>
-                            <div class="bg-green-50 rounded-lg p-4 border border-green-200">
-                                <i class="fas fa-envelope text-green-600 text-2xl mb-2"></i>
-                                <h4 class="font-semibold text-gray-800">อีเมล</h4>
-                                <p class="text-gray-600 text-sm">satriphatthalung@spt.ac.th</p>
-                            </div>
-                            <div class="bg-purple-50 rounded-lg p-4 border border-purple-200">
-                                <i class="fas fa-map text-purple-600 text-2xl mb-2"></i>
-                                <h4 class="font-semibold text-gray-800">มาเยี่ยมชม</h4>
-                                <p class="text-gray-600 text-sm">จ.-ศ. 08:00-16:30</p>
+                            <div class="ml-4">
+                                <p class="font-bold text-gray-800">อีเมล</p>
+                                <p class="text-gray-600 mt-1">admin@spt.ac.th</p>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
+
+                <div class="bg-white/60 backdrop-blur-md rounded-3xl p-8 shadow-xl border border-white/50 hover:shadow-2xl transition-all duration-300">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-6 font-prompt flex items-center">
+                        <i class="fas fa-hashtag text-blue-500 mr-3"></i> โซเชียลมีเดีย
+                    </h2>
+                    <div class="grid grid-cols-1 gap-4">
+                        <a href="https://www.facebook.com/spt.ac.th" target="_blank" class="flex items-center p-4 bg-blue-50 rounded-xl hover:bg-blue-100 transition-colors group">
+                            <div class="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center text-xl group-hover:scale-110 transition-transform">
+                                <i class="fab fa-facebook-f"></i>
+                            </div>
+                            <div class="ml-4">
+                                <p class="font-bold text-gray-800">โรงเรียนสตรีพัทลุง</p>
+                                <p class="text-sm text-gray-500">เพจหลัก</p>
+                            </div>
+                        </a>
+                        <a href="https://www.instagram.com/sptschool_official" target="_blank" class="flex items-center p-4 bg-pink-50 rounded-xl hover:bg-pink-100 transition-colors group">
+                            <div class="w-12 h-12 bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-500 text-white rounded-full flex items-center justify-center text-xl group-hover:scale-110 transition-transform">
+                                <i class="fab fa-instagram"></i>
+                            </div>
+                            <div class="ml-4">
+                                <p class="font-bold text-gray-800">sptschool_official</p>
+                                <p class="text-sm text-gray-500">Instagram</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
+</div>
+
 
         <div id="loginPage" class="page-content hidden">
             <section class="py-16 min-h-screen flex items-center justify-center bg-gray-50">
